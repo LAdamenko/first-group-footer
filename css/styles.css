@@ -29,16 +29,9 @@ img {
     height: auto;
 }
 
-.container {
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
 .footer-all {
     padding-top: 40px;
     padding-bottom: 0;
-    
 }
 
 .footer-container {
@@ -47,6 +40,7 @@ img {
     background-color: #1B414B;
     max-width: 355px;
     height: 412px;
+    margin: 0 auto;
 }
 
 .footer-nav {
@@ -122,12 +116,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-        margin: 0 auto;
-    }
-
+   
     .footer-all {
         padding-top: 75px;
     }
@@ -171,15 +160,10 @@ img {
         font-size: 14px;
         line-height: 1.18;
     }
+
 }
 
 @media screen and (min-width: 1280px) {
-
-    .container {
-        max-width: 1280px;
-        padding: 0 50px;
-        margin: 0 auto;
-    }
 
     .footer-container {
         padding: 50px 75px 20px;
@@ -189,13 +173,29 @@ img {
         min-width: 693px;
     }
 
+    .footer-nav-item {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-nav-item:hover,
+    .footer-nav-item:focus {
+        background-color: #FBFBFB;
+        color: #1B414B;
+    }
+    
+    .footer-social-link {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        color: rgba(251, 251, 251, 0.8);
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
-
+    
     .footer-container {
         max-width: 1390px;
     }
