@@ -139,6 +139,10 @@ img {
         transform: translateX(-50%);
     }
     
+    .footer-nav-item {
+        width: 91px;
+    }
+
     .footer-social-list {
         margin-bottom: 0;
     }
